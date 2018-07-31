@@ -1,9 +1,10 @@
 .slider{
   height: calc(100vh - 6rem);
-  width: 100vw;  
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(white,#e4e4e4);
 
   .slider__gallery{
   width: 100%;

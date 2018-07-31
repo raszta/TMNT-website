@@ -5,13 +5,16 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 1px solid black;
 
   .gallery__image{
     height: 50%;
-    margin-top: 20px;
     margin-bottom: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    display: flex;
 
   img{
     height: 100%;
@@ -19,6 +22,9 @@
     margin-bottom: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+  }
+  img:hover{
+    animation: rotation 5s alternate;
   }
 }
   .gallery__paragraph{
@@ -30,4 +36,16 @@
       margin-top: 25px;
     }
     }
+}
+
+@keyframes rotation{
+  0%{
+    transform: rotate(15deg);
+  }
+  50%{
+    transform: rotate(-15deg);
+  }
+  100%{
+    transform: scale(5);
+  }
 }
