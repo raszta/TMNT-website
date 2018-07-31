@@ -1,0 +1,25 @@
+.form__container{
+display: flex;
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+
+  legend{
+    font-size: 35px;
+    background: $background-color;
+  }
+
+  .form__input{
+    width: 100%;
+    margin: 10px;
+  }
+
+  .form__button{
+    width: 30%;
+    font-size: 20px;
+    background: $background-color;
+  }
+
+}
+}
