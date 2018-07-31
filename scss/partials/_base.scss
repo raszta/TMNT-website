@@ -1,6 +1,11 @@
-*{
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
+#menu-trigger {
+  display: block;
 
+  @media #{$mobile-up}{
+  display: block;
+  }
+
+  @media #{$big-up}{
+  display: none;
+  }
 }
