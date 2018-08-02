@@ -16,24 +16,38 @@
     border-top-right-radius: 10px;
     display: flex;
 
-  img{
+  .gallery__pic{
     height: 100%;
     width: 100%;
     margin-bottom: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
-  img:hover{
+  .gallery__pic:hover{
     animation: rotation 5s alternate;
   }
 }
   .gallery__paragraph{
-    text-align: left;
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    span{
+    font-size: 13px;
+
+    @media #{$mobile-up}{
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+    }
+
+    @media #{$big-up}{
+      text-align: left;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+    }
+    .gallery__boldText{
       margin-top: 25px;
+      font-weight: 900;
     }
     }
 }

@@ -1,4 +1,4 @@
-footer{
+.footer{
   margin-top: 20px;
   background: black;
   color: white;
@@ -21,7 +21,7 @@ footer{
     .footer__logo{
       margin-top: 20px;
 
-      span{
+      .footer__textColor{
         color:$background-color;
       }
     }
