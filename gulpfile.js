@@ -10,7 +10,7 @@ var notifier = require('node-notifier');
 function showError(err) {
 
   notifier.notify({
-    title: 'Błąd kompilacji SCSS',
+    title: 'Masz wielki błąd popraw go natychmiast!',
     message: err.messageFormatted
   });
 
