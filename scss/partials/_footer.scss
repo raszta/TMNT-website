@@ -1,10 +1,22 @@
 .footer{
-  margin-top: 20px;
+  margin-top: 1.2rem;
   background: black;
   color: white;
 
   .footer__container--images{
-  padding:20px;
+    display: flex;
+    flex-direction: row;
+    padding:0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    @media #{$mobile-up}{
+      padding:1.4rem;      
+    }
+
+    @media #{$big-up}{
+     padding:2rem;
+    }
   }
 
   .footer__container{
@@ -14,12 +26,12 @@
 
 
     .footer__text{
-      padding: 20px;
+      padding: 1.2rem;
       color: grey;
     }
 
     .footer__logo{
-      margin-top: 20px;
+      margin-top: 1.2rem;
 
       .footer__textColor{
         color:$background-color;

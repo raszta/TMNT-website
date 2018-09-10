@@ -1,28 +1,32 @@
 .header{
   background-color: black;
-  height: 5rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media #{$mobile-up}{
-  display: flex;
+  display: flex;  
+   height: 5rem;
   }
 
   @media #{$big-up}{
   display: flex;
   }
 
-  .header__headline:hover{
+   .header__headline:hover{
+    animation:none;
+
+    @media #{$big-up}{
     animation: change 6s alternate infinite;
+    }   
   }
 
   .header__headline{
     display: flex;
     color: #fff;
-    font-size: 1.5rem;
-    animation: change 6s alternate;
-    flex-wrap: wrap;
+    font-size: 1.5rem;    
+    flex-wrap: wrap;    
 
     @media #{$mobile-down}{
     display: flex;
@@ -32,6 +36,7 @@
     @media #{$mobile-up}{
     display: flex;
     font-size: 2.5rem;
+    animation: change 6s alternate;
     }
 
     @media #{$big-up}{

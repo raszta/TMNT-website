@@ -126,7 +126,7 @@
             <div class="gallery__image"><img src="images/tmnt.jpg" alt="Turtles in action" class="gallery__pic"></div>
             <div class="gallery__paragraph">
               <h3>Oh, and finally ...</h3> In pizza we trust!
-              <span class="gallery__boldText">Once upon a time was a little turtle who becomes a superior warrior. He was brave and just, he fought for justice!</span>
+              <span class="gallery__boldText">Once upon a time was a little turtle who becomes a superior warrior.</span>
             </div>
           </div>
         </div>
@@ -140,11 +140,14 @@
         <div class="col-12">
           <div class="form__container">
             <form action="" class="form">
-              <legend>Contact</legend>
-              <input class="form__input" type="text" name="name" placeholder="Name">
-              <input class="form__input" type="text" name="surname" placeholder="Surname">
-              <textarea class="form__input" cols="50" rows="10" placeholder="Your message"></textarea>
-              <input class="form__button" type="submit" value="Send">
+              <legend class="form__legend">Contact</legend>
+              <label for="name" class="form__label">Name</label>
+              <input class="form__input" type="text" name="name" placeholder="Name" id="name">
+              <label for="surname" class="form__label">Surname</label>
+              <input class="form__input" type="text" name="surname" placeholder="Surname" id="surname">
+              <label for="message" class="form__label">message</label>
+              <textarea class="form__input" cols="50" rows="10" placeholder="Your message" name="message" id="message"></textarea>
+              <button class="form__button" type="submit">Send</button>
             </form>
           </div>
         </div>
