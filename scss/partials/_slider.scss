@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(white,#e4e4e4);
+  background: url(../../images/abstract-background-black-and-white-935871.jpg);
+  background-attachment: fixed;
 
   @media #{$big-up}{
   height: calc(100vh - 6rem);
@@ -10,6 +11,8 @@
   }
   &__gallery{
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media #{$mobile-up}{
   display: flex;
@@ -18,9 +21,7 @@
   @media #{$big-up}{
     width: 100%;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;   
   }
 
   .slider__button--prev{
@@ -59,6 +60,7 @@
 
   .slider__list{
     display: block;
+    position: relative;
 
     .slider__article{
       display: none;
