@@ -14,9 +14,9 @@ function showError(err) {
     message: err.messageFormatted
   });
 
-  console.log( c.red('==================') );
-  console.log( c.red(err.messageFormatted) );
-  console.log( c.red('==================') );
+  console.log( c.green('==================') );
+  console.log(c.green(err.messageFormatted) );
+  console.log(c.green('==================') );
   this.emit('end');
 
 }

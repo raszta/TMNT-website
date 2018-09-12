@@ -1,10 +1,10 @@
 .contact{
-  background: url(../../images/smartphone-notebook-technology-calendar.jpg) center/cover;
+  background: url(../images/smartphone-notebook-technology-calendar.jpg) center/cover;
   height: 100vh;
   background-attachment: fixed;
   position: relative;
   @media #{$big-up}{
-    background: url(../../images/pexels-photo-247708.jpeg) center/cover;
+    background: url(../images/pexels-photo-247708.jpeg) center/cover;
   }
  
 }
