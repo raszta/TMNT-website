@@ -52,8 +52,6 @@
   align-items: flex-start;
   justify-content: flex-start;
 
-
-
   .header__menu{
     list-style-type: none;
     display: none;
@@ -146,4 +144,11 @@
 }
 .open {
   display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
